@@ -4,16 +4,16 @@
 class Data_Ch
 {
 private:
-	std::vector<int> input_read_dataTxt; //âåêòîðõðàíÿùèé íîìåðà ïàêåòîâ ñ÷èòàííûõ èç ôàéëà
+	std::vector<int> input_read_dataTxt; //вектор хранящий номера пакетов считанных из файла
 public:
-	//óäàëåíèå äóáëèêàòîâ, ñîðòèðîâêà
+	//удаление дубликатов, сортироввка
 	int remove_dubl(std::vector<int> input_data);
-	//ïîëó÷åíèå êîëè÷åñòâà ýëåìåíòîâ â âåêòîðå
+	//получение количества элементов в векторе
 	int getLeng();
-	//ïîëó÷åíèå íóæíîãî íîìåðà ïàêåòà
+	//получение нужного номера пакета
 	int getElement(int number);
-	//îïðåäåëåíèå íåäîñòîþùèõ ïàêåòîâ
+	//определение недостающих пакетов
 	int missing_pack(std::vector<int> data_set);
-	//äîáàâëåíèå â âåêòîð îáúåêòà
+	//добавление в вектор объекта
 	int addPack(std::string pack_curr);
 };
